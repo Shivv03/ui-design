@@ -90,6 +90,7 @@ header {
     text-decoration: none;
     color: #777;
     padding: .5rem;
+    display: block;
 }
 
 .menu li a:hover{
@@ -210,6 +211,11 @@ body {
     padding-bottom: 40px;
 }
 
+.font-xl {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .font-l {
     font-size: 25px;
 }
@@ -276,6 +282,84 @@ body {
     background-color: #2d3334;
 }
 
+.testimony-section {
+    padding: 50px 0px 100px 0px;
+}
+
+.change-box {
+    margin: 20px 0px;
+}
+
+.change-btn {
+    display: none;
+}
+
+.change-icon {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.testimony-one {
+    width: 100%;
+    height: 100px;
+    transition: width .2 ease;
+}
+
+.testimony-two {
+    width: 0px;
+    display: none;
+    height: 100px;
+    overflow: hidden;
+    transition: width .2 ease;
+}
+
+change-btn:checked ~ .testimony-one{
+    width: 100%;
+}
+change-btn:checked ~ .testimony-two{
+    width: 0px;
+}
+
+change-btn:unchecked ~ .testimony-two {
+    width: 100%;
+}
+
+change-btn:unchecked ~ .testimony-one {
+    width: 0px;
+}
+
+.projects-section {
+    background: url(images/portfolio_bg.jpg);
+    background-attachment: fixed !important;
+    background-repeat: repeat;
+}
+
+.projects-section-container {
+    background: rgba(71,71,71,.8);
+}
+
+.site-image {
+    position: relative;
+    top: -50px;
+    width: 60%;
+    margin-left: auto;
+}
+
+.site-image img {
+    width: 100%;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.works-section {
+    padding: 50px 0px;
+}
+
 
 @media (max-width: 700px) {
 
@@ -300,7 +384,7 @@ body {
     }
 
     .nav-bar .menu-btn:checked ~ .menu-container .menu {
-        max-height:240px;
+        max-height:300px;
     }
 
     .services-section {
@@ -315,12 +399,23 @@ body {
         width: auto;
     }
 
-
     .section-content-container {
         flex-direction: column;
     }
 
+    .content-container {
+        flex-direction: column;
+    }
 
+    .site-image {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: -10px;
+        width: 80%;
+    }
 
 }
 
