@@ -19,6 +19,16 @@
     align-content: center;
 }
 
+.space-between {
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.space-even {
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
 .text-center {
     text-align: center;
 }
@@ -189,6 +199,10 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    font-family: 'Dosis', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
@@ -218,6 +232,10 @@ body {
 
 .font-l {
     font-size: 25px;
+}
+
+.font-m {
+    font-size: 16px;
 }
 
 .font-s {
@@ -290,10 +308,6 @@ body {
     margin: 20px 0px;
 }
 
-.change-btn {
-    display: none;
-}
-
 .change-icon {
     width: 10px;
     height: 10px;
@@ -302,33 +316,33 @@ body {
     margin: 5px;
 }
 
+#change-btn {
+    display: none;
+}
+
 .testimony-one {
-    width: 100%;
+    max-width: 100%;
     height: 100px;
-    transition: width .2 ease;
+    overflow: hidden;
+    transition:  max-width .5s ease-in-out;
 }
 
 .testimony-two {
-    width: 0px;
-    display: none;
+    max-width: 0px;
     height: 100px;
     overflow: hidden;
-    transition: width .2 ease;
+    display: none;
+    transition:  max-width .5s ease-in-out;
 }
 
-change-btn:checked ~ .testimony-one{
-    width: 100%;
-}
-change-btn:checked ~ .testimony-two{
-    width: 0px;
+#change-btn:checked ~ .testimony-one{
+    max-width: 0px;
+    display: none;
 }
 
-change-btn:unchecked ~ .testimony-two {
-    width: 100%;
-}
-
-change-btn:unchecked ~ .testimony-one {
-    width: 0px;
+#change-btn:checked ~ .testimony-two{
+    max-width: 100%;
+    display: block;
 }
 
 .projects-section {
@@ -359,6 +373,153 @@ change-btn:unchecked ~ .testimony-one {
 .works-section {
     padding: 50px 0px;
 }
+
+.works-section-content {
+    padding-top: 50px;
+}
+
+.works-display-section {
+    width: 33.2%;
+    margin: auto;
+}
+
+.banner {
+    position: relative;
+    padding: 2px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(247,77,101,.9);
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
+.banner:hover .banner-overlay {
+    opacity: 0.8;
+}
+
+.banner-overlay a {
+    position: absolute;
+    top: 5%;
+    right: 20px;
+    text-decoration: none;
+    line-height: 1.42857143;
+}
+
+.banner-overlay h2 {
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    letter-spacing: 3px;
+}
+
+.banner-overlay h4 {
+    position: absolute;
+    bottom: 11px;
+    left: 20px;
+}
+
+.wrap-box {
+    flex-wrap: wrap;
+}
+
+.call-for-action-section {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.call-for-action {
+    width: 70%;
+}
+
+.action {
+    width: 30%;
+}
+
+.action-btn{
+    background-color: #000;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+}
+
+.action-btn:hover{
+    background-color: #f398a8;
+}
+
+.contact-section {
+    padding: 70px 0px;
+}
+
+.contact-section-header {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.contact-details-container  {
+    width: 25%;
+}
+
+.contact-details {
+    padding: 20px 0px;
+}
+
+.form {
+    width: 75%;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+.form-row {
+    width: 48%;
+    align-content: space-between;
+}
+
+.form-text-box,.form-text-area {
+    padding: 10px;
+    width: auto;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+}
+
+.form-submit-btn {
+    width: 100%;
+    background: #f73b56;
+    border-radius: 0px;
+    color: #fff;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    transition: all 1s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.form-submit-btn:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.contact-section-footer {
+    padding: 50px 0px;
+}
+
+
+
+
 
 
 @media (max-width: 700px) {
@@ -417,6 +578,15 @@ change-btn:unchecked ~ .testimony-one {
         width: 80%;
     }
 
+    .works-section-content {
+        flex-direction: column;
+    }
+
+    .works-display-section {
+        width: 98%;
+        margin: auto;
+    }
+
 }
 
 @media only screen and (min-width: 701px) and (max-width: 960px) {
@@ -435,9 +605,6 @@ change-btn:unchecked ~ .testimony-one {
         padding: 30px 0px;
         width: auto;
     }
-
-   
-
 
 }
 
