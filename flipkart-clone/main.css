@@ -1,0 +1,100 @@
+header {
+    color: #ffffff;
+}
+
+.logo{
+    margin: 5px;
+    background-image: url("images/flipkart-logo.webp");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 30px;
+    background-size: contain;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box:after {
+    position: absolute;
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f002";
+    font-weight: 900;
+    top: 7px;
+    right: 20px;
+    color: #2874f0;
+    z-index: 3;
+}
+
+.nav-drop-down .dropdown-menu {
+    left: -50px;
+}
+
+.nav-drop-down .dropdown-menu::before{
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top:-5px;
+    transform: rotate(45deg);
+}
+
+.side-nav-dialog{
+    margin: 0px;
+    max-width: 75%;
+}
+
+.side-nav-content{
+    height: 100vh !important;
+    border: none;
+    border-radius: 0px;
+    overflow: auto;
+}
+
+.fw-bold-light {
+    font-weight: 600!important;
+}
+
+.fs-small {
+    font-size: 0.8rem!important;
+}
+
+.help-nav {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.help-nav::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) { 
+    .logo{
+        background-image: url("images/logo-lite.webp");
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) { 
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+
+

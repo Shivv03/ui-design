@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/flipkart-favicon.ico"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <title>Online Shopping Site</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+    <header class="bg-primary">
+
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-lg">
+          <div class="col-sm-11 m-auto row flex-md-no-wrap">
+
+            <button class="btn bg-primary text-light d-md-none col-auto p-1 border-0" type="button" 
+                data-toggle="modal" data-target="#side-nav-modal">
+              <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <a class="navbar-brand logo col-auto" href="#"></a>
+            
+            <div class="col-md-5 col-12 search-box order-md-0 order-last">
+              <input type="search" class="form-control"
+                placeholder="Search for products,brands and more" aria-label="Search">
+            </div>
+            
+            <div class="dropdown nav-drop-down col-auto ml-auto">
+              <a class="nav-link dropdown-toggle text-light px-0 py-2 d-none d-md-block fw-bold" href="#" id="profile-link" role="button" data-toggle="dropdown" aria-expanded="false">
+                Shiva
+              </a>
+              <a class="nav-link text-light px-0 py-2 d-block d-md-none" href="#" id="profile-link" role="button" data-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle"></i>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="profile-link">
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-user-circle text-primary mr-2"></i>My Profile</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-bolt text-primary mr-2"></i>SuperCoin zone</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-plus text-primary mr-2"></i>Flipkart Plus Zone</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-shopping-bag text-primary mr-2"></i>Orders</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-heart text-primary mr-2"></i>Wishlist</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-comment-alt text-primary mr-2""></i>My Chats</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-credit-card text-primary mr-2"></i>Coupons</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-gift text-primary mr-2"></i>Gift Cards</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-bell text-primary mr-2"></i>Notifications</a>
+                </li>
+                <li><a class="dropdown-item p-2" href="#">
+                  <i class="fas fa-power-off text-primary mr-2"></i>Logout</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown nav-drop-down col-auto">
+              <a class="nav-link dropdown-toggle text-light px-0 py-2 d-none d-md-block fw-bold" href="#" id="more-link" 
+                role="button" data-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <a class="nav-link text-light px-0 py-2 d-block d-md-none" href="#" id="more-link" 
+                role="button" data-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-plus-square"></i>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="more-link">
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-bell text-primary mr-2"></i>Notification Preferences</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-briefcase text-primary mr-2"></i>Sell on Flipkart</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fas fa-phone-square text-primary mr-2"></i>24x7 Customer Care</a>
+                </li>
+                <li><a class="dropdown-item border-bottom p-2" href="#">
+                  <i class="fab fa-adversal text-primary mr-2"></i>Advertise</a>
+                </li>
+                <li><a class="dropdown-item p-2" href="#">
+                  <i class="fas fa-download text-primary mr-2"></i>Download App</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-auto">
+              <a class="nav-link text-light px-0 py-2" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="d-none d-md-inline fw-bold">Cart</span>
+              </a>
+            </div>
+          
+          </div>
+        </div>
+      </nav>          
+    </header>
+  <div class="container-fluid position-relative">
+    <div class="navbar bg-white border-bottom p-0">
+      <div class="container-fluid clearfix">
+        <div class="col-12 row flex-nowrap m-auto d-none d-md-flex col-form-label mx-2 justify-content-xl-evenly overflow-auto help-nav">
+
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light  px-0 col-form-label" id="electronics" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Electronics
+            </a>
+            <div class="dropdown-menu col-12 p-0 ml-2 mt-0 shadow " aria-labelledby="electronics">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light  px-0 col-form-label" id="tv-appliances" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              TVs & appliances
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="tv-appliances">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light  px-0 col-form-label" id="men-apparel" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Men
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="men-apparel">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Health Care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Health Care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light  px-0 col-form-label" id="women-apparel" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Women
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="women-apparel">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+              
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light  px-0 col-form-label" id="baby-kids" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Baby & Kids
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="baby-kids">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li><a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light px-0 col-form-label" id="home-furniture" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Home & Furniture
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="home-furniture">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Health Care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Health Care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="col-auto">
+            <a class="nav-link dropdown-toggle text-dark fw-bold-light px-0 col-form-label" id="misc" href="#" role="button" 
+              data-toggle="dropdown" aria-expanded="false">
+              Sports,Book & More
+            </a>
+            <div class="dropdown-menu col-12 p-0 shadow" aria-labelledby="misc">
+              <div class="col-12 d-flex">
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled px-1">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobiles</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mi</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Realme</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Samsung</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Infinix</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">OPPO</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Apple India</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Vivo</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Honor</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Asus</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">POCO Phone F1</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Motorola</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Zenphone</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">lenovo</a> </li>
+                  </ul>
+                </div>
+                <div class="col-2 bg-transparent py-2">
+                  <ul class="list-unstyled">
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Mobile Accessories</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile cases</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Headphones & headsers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Power banks</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Screenguards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">MemoryCards</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Mobile Chargers</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Holders</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">Smart wearable Tech</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Watches</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Glasses</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Bands</a> </li>
+                    <li> <a class="fst-italic fw-bold text-decoration-none text-secondary p-0" href="#">health care Appliances</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Bp Monitors</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Oxy Meters</a> </li>
+                    <li> <a class="nav-link text-secondary px-0 py-1" href="#">Smart Devices</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-auto">
+            <a class="nav-link text-dark fw-bold-light  px-0 col-form-label" id="electronics" href="#" role="button">
+              Flights
+            </a>
+          </div>
+
+          <div class="col-auto">
+            <a class="nav-link text-dark fw-bold-light  px-0 col-form-label" id="electronics" href="#" role="button">
+              Offfer Zone
+            </a>
+          </div>
+
+          <div class="col-auto">
+            <a class="nav-link text-dark fw-bold-light  px-0 col-form-label" id="electronics" href="#" role="button">
+              Grocery
+            </a>
+          </div>
+
+               
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex flex-nowrap overflow-auto d-md-none p-1 help-nav">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/93c417cd26f3f138.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/5ada49ba36380b40.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/bc9ad8ae2b44dab0.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/54abb23755dc69db.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/d9e49f9ef922a2a8.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/e651df.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/0574df.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/52d4da926dbea236.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/c6c1ae1f01c84f33.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/b3af3e.jpg?q=90" alt="" width="70px" height="70px">
+      <img src="https://rukminim1.flixcart.com/flap/132/124/image/997e5486abaa75c1.jpg?q=90" alt="" width="70px" height="70px">
+    </div>
+
+
+
+    <section class="container-xxl">
+      <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source media="(max-width: 899px)" srcset="https://rukminim1.flixcart.com/flap/612/272/image/840bad87cb22c066.jpg?q=90">
+              <source media="(min-width: 900px)" srcset="https://rukminim1.flixcart.com/flap/3376/560/image/58d90ab3c36da45d.jpg?q=50 2x,
+                                                          https://rukminim1.flixcart.com/flap/1688/280/image/58d90ab3c36da45d.jpg?q=50 1x">
+              <img src="https://rukminim1.flixcart.com/flap/612/272/image/840bad87cb22c066.jpg?q=90" class="w-100 d-block">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 899px)" srcset="https://rukminim1.flixcart.com/flap/612/272/image/682b1089f20d282e.jpg?q=90">
+              <source media="(min-width: 900px)" srcset="https://rukminim1.flixcart.com/flap/3376/560/image/e3c1af8d3a89a5f5.jpg?q=50 2x,
+                                                          https://rukminim1.flixcart.com/flap/1688/280/image/e3c1af8d3a89a5f5.jpg?q=50 1x">
+              <img src="https://rukminim1.flixcart.com/flap/612/272/image/682b1089f20d282e.jpg?q=90" class="w-100 d-block">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 899px)" srcset="https://rukminim1.flixcart.com/flap/864/384/image/d9a198304e2168db.jpg?q=90">
+              <source media="(min-width: 900px)" srcset="https://rukminim1.flixcart.com/flap/3376/560/image/f8bf172316e22b0c.jpg?q=50 2x,
+                                                          https://rukminim1.flixcart.com/flap/1688/280/image/f8bf172316e22b0c.jpg?q=50 1x">
+              <img src="https://rukminim1.flixcart.com/flap/864/384/image/d9a198304e2168db.jpg?q=90" class="w-100 d-block">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(max-width: 899px)" srcset="https://rukminim1.flixcart.com/flap/612/272/image/a7ce3517753a9593.jpg?q=90 ">
+              <source media="(min-width: 900px)" srcset="https://rukminim1.flixcart.com/flap/3376/560/image/f7fc08fc287132ad.jpg?q=50 2x,
+                                                          https://rukminim1.flixcart.com/flap/1688/280/image/f7fc08fc287132ad.jpg?q=50 1x">
+              <img src="https://rukminim1.flixcart.com/flap/612/272/image/a7ce3517753a9593.jpg?q=90 " class="w-100 d-block">
+            </picture>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>  
+    </section>
+
+    <section class="container-xxl my-2">
+      <div class="row">
+        <div class="card shadow col">
+          <div class="card-body">
+            <div class="card-title d-flex align-items-center">
+              <div class="col">
+                <h5 class="text-dark">Flipstart Deals Of The Day</h5>
+                <p class="text-secondary fs-small">Deals Refresh Every 8 Hours</p>
+              </div>
+              <button type="button" class="btn btn-primary h-100 w-auto">VIEW ALL</button>
+            </div>
+            <div class="row flex-nowrap overflow-auto text-center">
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Office Executive Chair" src="https://rukminim1.flixcart.com/image/150/150/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70" 
+                srcset="https://rukminim1.flixcart.com/image/300/300/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Office Study Chairs</p>
+                <p class="text-success mb-1 fs-small ">From ₹1999</p>
+                <p class="text-secondary mb-1 fs-small ">Philips & more</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Men Sweatshirt" src="https://rukminim1.flixcart.com/image/150/150/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70" 
+                srcset="https://rukminim1.flixcart.com/image/300/300/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70 2x,
+                https://rukminim1.flixcart.com/image/150/150/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Selling Out Fast</p>
+                <p class="text-success mb-1 fs-small ">Min 60% Off</p>
+                <p class="text-secondary mb-1 fs-small ">Men's Clothing</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Cotton Silk Saree" src="https://rukminim1.flixcart.com/image/150/150/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70"
+                 srcset="https://rukminim1.flixcart.com/image/300/300/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Festive Sarees & Suits</p>
+                <p class="text-success mb-1 fs-small ">60-80% Off</p>
+                <p class="text-secondary mb-1 fs-small ">Philips & more</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Jackly Combination Screwdriver Set" src="https://rukminim1.flixcart.com/image/150/150/screwdriver-set/k/q/u/6032-jackly-original-imaee5u4zgbwyjws.jpeg?q=70"
+                 srcset="https://rukminim1.flixcart.com/image/300/300/screwdriver-set/k/q/u/6032-jackly-original-imaee5u4zgbwyjws.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/screwdriver-set/k/q/u/6032-jackly-original-imaee5u4zgbwyjws.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Hand Tools</p>
+                <p class="text-success mb-1 fs-small ">Starting ₹99</p>
+                <p class="text-secondary mb-1 fs-small ">Best Selling</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Healthy Nutmix" src="https://rukminim1.flixcart.com/image/150/150/k7qinbk0/nut-dry-fruit/u/c/t/200-premium-international-healthy-nutmix-pouch-happilo-original-imafpwgxqvj8xhya.jpeg?q=70"
+                 srcset="https://rukminim1.flixcart.com/image/300/300/k7qinbk0/nut-dry-fruit/u/c/t/200-premium-international-healthy-nutmix-pouch-happilo-original-imafpwgxqvj8xhya.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/k7qinbk0/nut-dry-fruit/u/c/t/200-premium-international-healthy-nutmix-pouch-happilo-original-imafpwgxqvj8xhya.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Snacks and Sweets</p>
+                <p class="text-success mb-1 fs-small ">Upto 50% Off</p>
+                <p class="text-secondary mb-1 fs-small ">Happilo, Granola & More</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Office Executive Chair" src="https://rukminim1.flixcart.com/image/150/150/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70" 
+                srcset="https://rukminim1.flixcart.com/image/300/300/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/kf75fgw0/office-study-chair/z/g/w/carbon-steel-low-back-royal-ergonomic-desk-mesh-chair-in-brown-original-imafvzvprhk3xqdc.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Office Study Chairs</p>
+                <p class="text-success mb-1 fs-small ">From ₹1999</p>
+                <p class="text-secondary mb-1 fs-small ">Philips & more</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Men Sweatshirt" src="https://rukminim1.flixcart.com/image/150/150/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70" 
+                srcset="https://rukminim1.flixcart.com/image/300/300/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70 2x,
+                https://rukminim1.flixcart.com/image/150/150/k0zlsi80/sweatshirt/j/9/b/m-m7aw19swtsh017b-metronaut-original-imafknvkngfvvccz.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Selling Out Fast</p>
+                <p class="text-success mb-1 fs-small ">Min 60% Off</p>
+                <p class="text-secondary mb-1 fs-small ">Men's Clothing</p>
+              </div>
+              <div class="col-auto pointer p-2">
+                <img class="mb-2" alt="Cotton Silk Saree" src="https://rukminim1.flixcart.com/image/150/150/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70"
+                 srcset="https://rukminim1.flixcart.com/image/300/300/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70 2x,
+                 https://rukminim1.flixcart.com/image/150/150/kfikya80-0/sari/j/o/u/free-hiran-mor-silky-ss-new-desirable-admirable-most-south-original-imafvy6wmqfznynf.jpeg?q=70 1x">
+                <p class="fw-bold mb-1 fs-small">Festive Sarees & Suits</p>
+                <p class="text-success mb-1 fs-small ">60-80% Off</p>
+                <p class="text-secondary mb-1 fs-small ">Philips & more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-auto">
+              <img src="https://rukminim1.flixcart.com/flap/464/708/image/f8bb25b56d4f1748.jpg?q=70" width="250" height="350">
+        </div>
+      </div>
+    </section>
+
+    <section class="container-xxl my-2">
+      <div class="row">
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Best Selling Laptops" srcset="https://rukminim1.flixcart.com/flap/960/960/image/b3d17c3c9e41c9d9.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/b3d17c3c9e41c9d9.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/b3d17c3c9e41c9d9.jpg?q=50">
+        </div>
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Helmets" srcset="https://rukminim1.flixcart.com/flap/960/960/image/6b196870791f16bd.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/6b196870791f16bd.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/6b196870791f16bd.jpg?q=50">
+        </div>
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Apparels" srcset="https://rukminim1.flixcart.com/flap/960/960/image/c87f61d426d1e31c.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/c87f61d426d1e31c.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/c87f61d426d1e31c.jpg?q=50">
+        </div>
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Grocery" srcset="https://rukminim1.flixcart.com/flap/960/960/image/fc7fc41a96c682af.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/fc7fc41a96c682af.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/fc7fc41a96c682af.jpg?q=50">
+        </div>
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Grocery" srcset="https://rukminim1.flixcart.com/flap/960/960/image/08579339a001af98.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/08579339a001af98.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/08579339a001af98.jpg?q=50">
+        </div>
+        <div class="col-md-4 col-sm-2 shadow pointer p-2">
+          <img class="w-100" alt="Grocery" srcset="https://rukminim1.flixcart.com/flap/960/960/image/af0cd935c76bb915.jpg?q=50 2x, https://rukminim1.flixcart.com/flap/480/480/image/af0cd935c76bb915.jpg?q=50 1x"
+           src="https://rukminim1.flixcart.com/flap/480/480/image/af0cd935c76bb915.jpg?q=50">
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+
+
+
+
+
+
+    <div class="modal fade" id="side-nav-modal" tabindex="-1" aria-labelledby="side-nav-modal-label" aria-hidden="true">
+      <div class="modal-dialog side-nav-dialog">
+        <div class="modal-content side-nav-content">
+          <div class="modal-header bg-primary text-light p-2">
+            <h6 class="modal-title" id="side-nav-modal-label">Shiva</h6>
+            <img src="images/sidebar-logo.webp" width="20px">
+          </div>
+          <div class="modal-body p-0">
+            <ul class="list-unstyled p-1">
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-shopping-bag pr-2 my-0"></i>My Orders</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-credit-card pr-2 my-0"></i>My Coupons</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-shopping-cart pr-2 my-0"></i>My Cart</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-heart pr-2 my-0"></i>My Wishlist</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-user-circle pr-2 my-0"></i>My Account</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-bell pr-2 my-0"></i>My Notifications</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-comment-alt pr-2 my-0"></i>My Chats</a></li>
+              <hr>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-language pr-2 my-0"></i>Choose Language</a></li>
+              <hr>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-bolt pr-2 my-0"></i>SuperCoin zone</a> </li>
+              <li> <a href="#" class="nav-link text-secondary px-0"> <i class="fas fa-plus pr-2 my-0"></i>Flipkart Plus Zone</a> </li>
+              <hr>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-th-large pr-2 my-0"></i>All Categories</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-heart pr-2 my-0"></i>More on flipkart
+                <span class="ml-auto badge bg-danger">NEW</span></a></li>              
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-percent pr-2 my-0"></i>Offer Zone</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0"><i class="fas fa-briefcase pr-2 my-0"></i>Sell on Flipcart</a></li>
+              <hr>
+              <li> <a href="#" class="nav-link text-secondary px-0">Legal</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0">Help</a></li>
+              <li> <a href="#" class="nav-link text-secondary px-0">Notification preferances</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+</html>

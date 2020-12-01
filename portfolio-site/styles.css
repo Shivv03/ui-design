@@ -549,9 +549,6 @@ footer img {
     margin: 75px 0px;
 }
 
-
-
-
 @media (max-width: 700px) {
 
     .menu {
@@ -640,9 +637,6 @@ footer img {
     .form-item {
         margin-bottom: 20px;
     }
-
-
-
 }
 
 @media only screen and (min-width: 701px) and (max-width: 960px) {
@@ -661,14 +655,10 @@ footer img {
         padding: 30px 0px;
         width: auto;
     }
-
 }
-
-
 
 @media only screen and (min-width: 960px) {
     .menu-icon {
         display: none;
     }
-
 }
