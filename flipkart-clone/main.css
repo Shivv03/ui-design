@@ -1,5 +1,10 @@
 header {
     color: #ffffff;
+    height: 56px; 
+}
+
+.help-nav {
+    padding-top: 56px;
 }
 
 .logo{
@@ -65,16 +70,6 @@ header {
     font-size: 0.7rem!important;
 }
 
-.help-nav {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-
-.help-nav::-webkit-scrollbar { /* WebKit */
-        width: 0;
-        height: 0;
-}
-
 .carousel-item img {
     height: 280px;
 }
@@ -93,10 +88,25 @@ header {
     height: 150px;
 }
 
+.carousel-control {
+    height: 90px;
+    width: 50px;
+    background-color: white;
+    opacity: 1;
+    margin: auto;
+}
 
 @media (max-width: 768px) { 
     .logo{
         background-image: url("images/logo-lite.webp");
+    }
+
+    header {
+        height: 94px; 
+    }
+
+    .help-nav {
+        padding-top: 94px !important;
     }
 
     .carousel-item img {
