@@ -61,6 +61,10 @@ header {
     font-size: 0.8rem!important;
 }
 
+.fs-ex-small {
+    font-size: 0.7rem!important;
+}
+
 .help-nav {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -72,11 +76,21 @@ header {
 }
 
 .carousel-item img {
-    height: 300px;
+    height: 280px;
 }
 
 .pointer {
     cursor: pointer;
+}
+
+.rating-box .fas{
+    font-size: .6rem;
+    top: -2px;
+}
+
+.product-box {
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -86,7 +100,7 @@ header {
     }
 
     .carousel-item img {
-        height: 250px;
+        height: 240px;
     }
 }
 
