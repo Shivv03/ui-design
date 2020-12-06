@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('fonts/sfprodisplay.woff') format('woff');
+}
+
+*{
+    font-family: "SFProDisplay";
+}
+
+header {
+    background: rgba(0,0,0,0.8);
+}
+
+.hamburger-icon{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    transition: 0.5s transform ease;
+}
+
+.hamburger-icon.collapsed::before{
+    position: absolute;
+    width: 17px;
+    height: 1px;
+    content: '';
+    top: 12px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    transform: rotate(0deg);
+    transition: 0.5s all ease;
+}
+
+.hamburger-icon.collapsed::after{
+    position: absolute;
+    width: 17px;
+    height: 1px;
+    content: '';
+    top: 18px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    transform: rotate(0deg);
+    transition: 0.5s all ease;
+}
+
+.hamburger-icon::before{
+    position: absolute;
+    width: 17px;
+    height: 1px;
+    content: '';
+    top:12px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    transform: rotate(45deg);
+    transition: 0.5s all ease;
+}
+
+.hamburger-icon::after{
+    position: absolute;
+    width: 17px;
+    height: 1px;
+    content: '';
+    top:12px;
+    background-color: #fff;
+    border-radius: 0.5px;
+    transform: rotate(-45deg);
+    transition: 0.5s all ease;
+}
+
+@media (max-width: 768px) { 
+    .border-custom {
+        border-bottom: 1px solid #6c757d!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .h-auto-custom {
+        height: auto !important;
+    }
+}
+
+.chevron-right::after {
+    position: relative;
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f054";
+    font-weight: 900;
+    font-size: 13px;
+    left: 4px;
+    color: inherit;
+    z-index: 3;
+    text-decoration: none;
+}
+
+.link-custom {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.link-custom:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.fs-xl {
+    font-size: calc(2rem + 1.5vw) !important;
+}
+
+.fs-7 {
+    font-size: .9rem !important;
+}
+
+.fs-8 {
+    font-size: .8rem !important;
+}
+
+.bg-black {
+    background-color: black !important;
+    color: white !important;
+}
+
+.img-box{
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-position-y: 0px;
+}
+
+.img-box-small{
+    height: 580px;
+}
+
+.img-box-bottom {
+    background-position-y: 110%;
+}
+
+.bg-iphone-pro-max{
+    background-image: url(images/iphone_12_pro_large.jpg);
+}
+
+.bg-iphone-12{
+    background-image: url(images/iphone_12_large.jpg);
+}
+
+.bg-mac-book-air{
+    background-image: url(images/macbook_air_large.jpg);
+}
+
+.bg-homepod-mini{
+    background-image: url(images/homepod_mini_tile_large.jpg);
+}
+
+.bg-mac-book-pro{
+    background-image: url(images/macbook_pro_13_large.jpg);
+}
+
+.bg-ipad-air{
+    background-image: url(images/ipad_air_large.jpg);
+}
+
+.bg-watch-series{
+    background-image: url(images/watch_series_large.jpg);
+}
+
+.bg-app-store {
+    background-image: url(images/best_of_2020_large.jpg);
+}
+
+.bg-tv-plus {
+    background-image: url(images/mariah_carey_christmas_large.jpg);
+}
+
+.bg-tv-logo {
+    background-image: url(images/logo_mariah_carey_christmas_large.png);
+    background-position: center;
+    height: 180px;
+    width: 340px;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+
+@media (max-width: 767px) {
+    .img-box{
+        height: 550px;
+    }
+
+    .bg-iphone-pro-max{
+        background-image: url(images/iphone_12_pro_small.jpg);
+    }
+
+    .bg-iphone-pro-max{
+        background-image: url(images/iphone_12_pro_small.jpg);
+    }
+    
+    .bg-iphone-12{
+        background-image: url(images/iphone_12_small.jpg);
+    }
+    
+    .bg-mac-book-air{
+        background-image: url(images/macbook_air_small.jpg);
+    }
+    
+    .bg-homepod-mini{
+        background-image: url(images/homepod_mini_tile_small.jpg);
+    }
+    
+    .bg-mac-book-pro{
+        background-image: url(images/macbook_pro_13__small.jpg);
+    }
+    
+    .bg-ipad-air{
+        background-image: url(images/ipad_air_small.jpg);
+    }
+    
+    .bg-watch-series{
+        background-image: url(images/watch_series_small.jpg);
+    }
+    
+    .bg-app-store {
+        background-image: url(images/best_of_2020_small.jpg);
+    }
+    
+    .bg-tv-plus {
+        background-image: url(images/mariah_carey_christmas_small.jpg);
+    }
+
+    .bg-tv-logo {
+        background-image: url(images/logo_mariah_carey_christmas_medium.png);
+    }
+}
+
